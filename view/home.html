@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Strona spamerska</title>
+    <script>
+        $(function () {
+            $("#navbar").load("shared/navbar.php");
+        });
+        $(function () {
+            $("#body-content").load("sign_in.html");
+        });
+        function load(url) {
+            $("#body-content").load(url);
+        }
+    </script>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="body-content"></div>
+</body>
+</html>
